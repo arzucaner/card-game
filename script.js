@@ -1,14 +1,30 @@
-let firstCard = 10
-let secondCard = 7
-let sum = firstCard = secondCard + 6 // 23
+console.log(4 === 3)  //false
+console.log(5 > 2)    //true
+console.log(12 > 12)  //false
+console.log(3 < 0)    //false
+console.log(3 >= 3)   //true
+console.log(11 <= 11) //true
+console.log(3 <= 2)   //false
 
-if(sum < 21) {
-   console.log("Do you want to draw a new card? ")
-} else if (sum === 21) {
-    console.log("Wohoo! You've got Cardgames!")
-} else {
-    console.log ("You're out of the game!")
-}
+//let firstCard = 10
+//let secondCard = 7
+//let sum = firstCard = secondCard + 6 // 23
+//let hasBlackJack = false
+//Create a variable called isAlive and assign it to true
+//let isAlive = true
+
+//if(sum < 21) {
+  // console.log("Do you want to draw a new card? ")
+//} else if (sum === 21) {
+  //  console.log("Wohoo! You've got Cardgames!")
+  //  hasCard = true
+//} else {
+   // console.log ("You're out of the game!")
+  //  isAlive = false
+//}
+
+//Log it out to check that you're doing it right
+//console.log(isAlive)
 
 // Check if the person is old enough to enter the nightclub (21)
  // Log a suitable message to the console in both cases  
@@ -50,8 +66,10 @@ let age = 100
      console.log("Do you want to draw a new card?")
  } else if (sum === 21) {
      console.log("Wohoo! You've got Card")
+     hasCard = true
  } else {
    console.log("You're out of the game!")
  }
  
- 
+ // CASH OUT!
+ console.log(hasCard)
