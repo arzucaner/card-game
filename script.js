@@ -1,17 +1,28 @@
-console.log(4 === 3)  //false
-console.log(5 > 2)    //true
-console.log(12 > 12)  //false
-console.log(3 < 0)    //false
-console.log(3 >= 3)   //true
-console.log(11 <= 11) //true
-console.log(3 <= 2)   //false
+//console.log(4 === 3)  //false
+//console.log(5 > 2)    //true
+//console.log(12 > 12)  //false
+//console.log(3 < 0)    //false
+//console.log(3 >= 3)   //true
+//console.log(11 <= 11) //true
+//console.log(3 <= 2)   //false
 
-//let firstCard = 10
-//let secondCard = 7
-//let sum = firstCard = secondCard + 6 // 23
-//let hasBlackJack = false
-//Create a variable called isAlive and assign it to true
-//let isAlive = true
+let firstCard = 10
+let secondCard = 7
+let sum = firstCard = secondCard
+let hasBlackJack = false
+Create a variable called isAlive and assign it to true
+let isAlive = true
+
+// Declare a variable called message and assign it's value to an empty string
+let message = ""
+
+if (sum <= 20) {
+   message = "Do you want to draw a new card?"
+} else if (sum === 21) {
+   message = "Wohoo! You've got Card"
+   hasCard = true
+} else {
+ message = "You're out of the game!"
 
 //if(sum < 21) {
   // console.log("Do you want to draw a new card? ")
@@ -62,14 +73,14 @@ let age = 100
  //else if exactly 21 -> "Wohoo! You've got Card!"
  //else -> "You're out of the game!"
 
- if (sum <= 20) {
-     console.log("Do you want to draw a new card?")
- } else if (sum === 21) {
-     console.log("Wohoo! You've got Card")
-     hasCard = true
- } else {
-   console.log("You're out of the game!")
- }
+ //if (sum <= 20) {
+     //console.log("Do you want to draw a new card?")
+ //} else if (sum === 21) {
+    // console.log("Wohoo! You've got Card")
+   //  hasCard = true
+ //} else {
+ //  console.log("You're out of the game!")
+ //}
  
  // CASH OUT!
  console.log(hasCard)
