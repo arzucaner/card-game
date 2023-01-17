@@ -16,13 +16,25 @@ let isAlive = true
 // Declare a variable called message and assign it's value to an empty string
 let message = ""
 
-if (sum <= 20) {
+//Store the message-el paragraph in a variable called messageEl
+let messageEl = document.getElementById("message-el")
+console.log(messageEl)
+
+function startGame() {
+   if (sum <= 20) {
    message = "Do you want to draw a new card?"
-} else if (sum === 21) {
+   } else if (sum === 21) {
    message = "Wohoo! You've got Card"
    hasCard = true
-} else {
- message = "You're out of the game!"
+   } else {
+   message = "You're out of the game!"
+   isAlive = false
+   }
+   //console.log(message)
+   //Display the message in the messageEl using messageEL.textContent
+   messageEl.textContent = message
+}
+
 
 //if(sum < 21) {
   // console.log("Do you want to draw a new card? ")
