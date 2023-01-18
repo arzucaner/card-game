@@ -10,17 +10,27 @@ let firstCard = 10
 let secondCard = 7
 let sum = firstCard = secondCard
 let hasBlackJack = false
-Create a variable called isAlive and assign it to true
+
+//Create a variable called isAlive and assign it to true
 let isAlive = true
 
 // Declare a variable called message and assign it's value to an empty string
-let message = ""
+
+//let sumEl = document.getElementById(".sum-el")
+let sumEl = document.querySelector(".sum-el")
+
+// Store the cards paragraph in a variable called cardsEl
+let cardsEl = document.getElementById("cards-el")
 
 //Store the message-el paragraph in a variable called messageEl
 let messageEl = document.getElementById("message-el")
 console.log(messageEl)
 
 function startGame() {
+
+   // Render the cards on the page using this format -> "Cards: 10 4"
+   cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
+   sumEl.textContent = "Sum: " + sum
    if (sum <= 20) {
    message = "Do you want to draw a new card?"
    } else if (sum === 21) {
@@ -95,4 +105,15 @@ let age = 100
  //}
  
  // CASH OUT!
- console.log(hasCard)
+   console.log(hasCard)
+
+ function newCard() {
+   console.log("Drawing a new card from the deck!")
+
+   // 1.Create a card variable, and hard code it's value to a number (2-11)
+   let card = 6
+   // Add the new card to the sum variable
+   sum += card
+   // Call startGame()
+   startGame()
+ }
