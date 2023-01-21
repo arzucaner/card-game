@@ -17,8 +17,8 @@ let experience = ["Junior Frontend Developer"]
 console.log(experience[1])
 console.log( featuredPosts.length )
 
-let cards = [7,4]
-cards.push(6)
+//let cards = [7,4]
+//cards.push(6)
 
 //console.log(cards)
 
@@ -27,7 +27,9 @@ cards.push(6)
 let messages = [
     "Hey, how's it going?",
     "I'm good, thank you! How about you?",
-    "All good. Been working on my portfolio lately."
+    "All good. Been working on my portfolio lately.",
+    "Same here!",
+    "Great to hear",
 ]
 
 let newMessage = "Same here!"
@@ -38,3 +40,30 @@ console.log(messages)
 //How can you remove the last item in an array? Try to google it!
 messages.pop()
 console.log(messages)
+
+// START   FINISH   STEP SIZE
+for (let count = 1; count < 11; count +=1) {
+
+    console.log(count)
+}
+
+for (let i = 0; i < 6; i += 1) {
+    console.log(i)
+}
+
+for (let i = 10; i < 101; i += 10){
+    console.log(i)
+}
+
+let cards = [7, 3, 9]
+
+for (let i = ); i < cards.length; i++) {
+
+}
+
+let sentence = ["Hello", "my", "name", "is", "Arzu"]
+let greetingEl = document.getElementById("greeting-el")
+
+for (let i = 0; i < sentence.length; i++) {
+    greetingEl.textContent =+ sentence[i] + " "
+}
