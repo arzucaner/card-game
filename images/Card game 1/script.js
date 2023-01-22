@@ -32,7 +32,11 @@ function startGame() {
 console.log(messageEl)
 
 function randerGame() {
-
+   // Create a for loop that renders out all the cards instead of just two
+   for (let i = 0; i <cards.length; i++) {
+      cardsEl.textContent += cards[i]
+   }
+   
    // Render the cards on the page using this format -> "Cards: 10 4"
    cardsEl.textContent = "Cards: " + Cards[0] + " " + Cards[1]
    sumEl.textContent = "Sum: " + sum
