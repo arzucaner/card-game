@@ -25,6 +25,11 @@ let cardsEl = document.getElementById("cards-el")
 //Store the message-el paragraph in a variable called messageEl
 let messageEl = document.getElementById("message-el")
 
+// 1.Create a function, getRandomCard(), that always returns the number 5
+function getRandomCard() {
+    return 5
+}
+
 function startGame() {
    renderGame()
 }
@@ -36,7 +41,7 @@ function randerGame() {
    for (let i = 0; i <cards.length; i++) {
       cardsEl.textContent += cards[i]
    }
-   
+
    // Render the cards on the page using this format -> "Cards: 10 4"
    cardsEl.textContent = "Cards: " + Cards[0] + " " + Cards[1]
    sumEl.textContent = "Sum: " + sum
