@@ -89,12 +89,13 @@ let fastestRace = getFastestRaceTime()
 
 console.log(fastestRace)
 
-let randomNumber = Math.random()
+let randomNumber = Math.random() 
 
 console.log(randomNumber)
 
-/*
+function rollDice() {
+    let randomNumber = Math.floor( Math.random() * 6 ) + 1
+    return randomNumber
+}
 
-What does Math.random() do?
-
-Your answer: it generates a random number between 0 and 1 (not inclusive of 1)
+console.log( rollDice())

@@ -25,6 +25,20 @@ let cardsEl = document.getElementById("cards-el")
 //Store the message-el paragraph in a variable called messageEl
 let messageEl = document.getElementById("message-el")
 
+// Make this function return a random number between 1 and 13
+function getRandomCard() {
+   // if 1     -> return 11
+   // if 11-13 -> return 10
+   let randomNumer = Math.floor( Math.random()*13 + 1 //1-13
+   if (randomNumer > 10) {
+      return 10
+   } else if (randomNumer === 1) {
+      return 11
+   } else {
+      return randomNumer
+   }
+}
+
 // 1.Create a function, getRandomCard(), that always returns the number 5
 function getRandomCard() {
     return 5
