@@ -99,3 +99,27 @@ function rollDice() {
 }
 
 console.log( rollDice())
+
+let hasCompletedCourse = true
+let givesCertificate = true
+
+if (hasCompletedCourse === true && givesCertificate === true) {
+}
+
+function generateCertificate() {
+    console.log("Generating certificate...")
+}
+
+let hasSolvedChallenge = false
+let hasHintsLeft = false
+
+// Create an if statement that checks that both variables are false.
+// if so, run the showSolution() function
+
+if (hasSolvedChallenge === false && hasHintsLeft === false) {
+
+}
+
+function showSolution() {
+    console.log("Showing the solution....")
+}

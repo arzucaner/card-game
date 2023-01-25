@@ -152,3 +152,9 @@ let age = 22
    startGame()
  }
 
+function newCard() {
+   let card = getRandomCard()
+      sum += card 
+      card.push(card)
+      renderGame()
+}
