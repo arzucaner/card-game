@@ -123,3 +123,25 @@ if (hasSolvedChallenge === false && hasHintsLeft === false) {
 function showSolution() {
     console.log("Showing the solution....")
 }
+
+// Create an if statement that checks that both variables are false.
+// If so, run the showSolution() function
+
+if(hasSolvedChallenge === && hasHintsLeft ===false) {
+    showSolution()
+}
+
+function showSolution() {
+    console.log("Showing the solution...")
+}
+
+let likesDocumentaries = false
+let likesStartups = false
+
+if (likesDocumentaries === true || likesStartups === true) {
+    recommendMovie()
+}
+
+function recommendMovie() {
+    console.log("Hey, checek out this new film we think you will like!")
+}

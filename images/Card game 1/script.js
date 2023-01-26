@@ -22,6 +22,12 @@ let sumEl = document.querySelector(".sum-el")
 // Store the cards paragraph in a variable called cardsEl
 let cardsEl = document.getElementById("cards-el")
 
+let playername = "Arzu"
+let playerChips = 150
+
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = playerName + ": $" + playerChips
+
 //Store the message-el paragraph in a variable called messageEl
 let messageEl = document.getElementById("message-el")
 
@@ -153,8 +159,11 @@ let age = 22
  }
 
 function newCard() {
+   // Only allow the player to get a new card if she IS alive and does NOT have Blackjack
+   if (isAlive === true && hasBlackJack === false) {
    let card = getRandomCard()
       sum += card 
       card.push(card)
       renderGame()
+   }
 }
