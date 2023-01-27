@@ -145,3 +145,36 @@ if (likesDocumentaries === true || likesStartups === true) {
 function recommendMovie() {
     console.log("Hey, checek out this new film we think you will like!")
 }
+
+if (hasCompletedCourse === true || givesCertificate === true) {
+    generateCertificate()
+}
+
+// Objects - stire data in-depth - composite / complex data type
+// key-value pairs
+
+let course = {
+    title:"Learn JavaScript for free",
+    lesson: 6,
+    creator: "Arzu Caner",
+    length: 64,
+    level: 1,
+    isFree: true,
+    tags: ["HTML", "JavaScript"]
+}
+
+console.log( course.tags)
+
+// Create an object that represents an airbnb castle listing.
+// It should contain at least one boolean, one string, one number, and one arruy
+// Log out at least two of the keys using the dot notation
+
+let castle = {
+    title: "Live like a king in my castle",
+    price: 190,
+    isSuperHost: true,
+    images: ["img/bridge.png", "img/bridge.png"]
+}
+
+console.log(bridge.price)
+console.log(bridge.isSuperHost)
