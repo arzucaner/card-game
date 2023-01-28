@@ -22,6 +22,11 @@ let sumEl = document.querySelector(".sum-el")
 // Store the cards paragraph in a variable called cardsEl
 let cardsEl = document.getElementById("cards-el")
 
+// Grab ahold of the player-el paragraph and store it in variable called playerEl
+
+let playerEl =document.getElementById("player-el")
+
+
 let playername = "Arzu"
 let playerChips = 150
 
