@@ -64,3 +64,42 @@ for (let i = 0; i < largeCountries.length; i++) {
     console.log("- " + largeCountries[i])
 }
 
+largeCountries.pop()
+largeCountries.push("Pakistan")
+largeCountries.shift()
+largeCountries.unshift("China")
+console.log(largeCountries)
+
+let dayofMonth = 13
+let weekday = "Tuesday"
+
+if (dayofMonth === 123 && weekday === "Friday") {
+    console.log("spooky face")
+}
+
+let hands = ["rock", "paper", "scissor"]
+
+// Create a function that returns a random item from the array
+
+function getHand() {
+    let randomIndex = Math.floor (Math.random() * 3)
+    return hands[randomIndex]
+}
+
+console.log( getHand() )
+
+let fruit = ["🍎","🍏","🍎","🍏"]
+let redappleShelf = document.getElementById("red apple-shelf")
+let greenappleShelf = document.getElementById("green apple-shelf")
+
+function sortFruit() {
+    for (let i = 0; i < fruit.length; i++) {
+        if (fruit[i] === "🍎") {
+            redappleShelf.textContent += "🍎"
+        } else if (fruit[i] === "🍏") {
+            greenappleShelf.textContent += "🍏"
+        }
+    }
+}
+
+sortFruit()
